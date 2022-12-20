@@ -1,11 +1,12 @@
 # public key authentication for SSH
 ### Generating SSH Key Pair on local machine 
->ssh-keygen.
-### Add the corresponding public key/id_rsa.pub to the server 
-###  open the authorized_keys file using a text editor and Copy the public key/id_rsa.pub contents into the authorized_keys file 
+>ssh-keygen
+### copy the corresponding public key/id_rsa.pub from local machine
+> cat .ssh/id_rsa.pub
+###  open the authorized_keys file and  paste the public key/id_rsa.pub contents to server 
 > vi .ssh/authorized_keys
 ### log into your server from the local machine
->ssh <username>@<host>
+>ssh username@host
   
   
   
